@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+
+/* Style the entire body of the page */
+body {
+    background-color: var(--grey-900);
+    /* Full height of the screen */
+    height: 100vh;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin: 0;
+    /* Use Flexbox layout */
+    display: flex;
+    /* Stack elements vertically */
+    flex-direction: column;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+}
+
+.page_content {
+    /* this needs to be 100vh to be able to center content in the page height (could also be 90)*/
+    height: 100vh;
+    /* Use Flexbox layout */
+    display: flex;
+    /* Stack elements vertically */
+    flex-direction: column;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+}
+
+/* Style the outer card box */
+.card {/* Use Flexbox layout */
+    display: flex;
+    flex-direction: column;
+    /* Rounded corners */
+    border-radius: 1.25rem;
+    /* Inner border space */
+    padding: 1.25rem;
+    padding-top: 1.875rem;
+    /* Fixed width */
+    width: 21.25rem;
+    /* Center text inside */
+    text-align: center;
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    /* items!!! not just the whole grid */
+    justify-items: stretch;
+    background-color: var(--grey-800);
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+    /* width not 100% -> need to center */
+    justify-self: center;
+    row-gap: 0.5rem;
+}
+.card-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    row-gap: 1.2rem;
+    width: 100%;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+
+}
+
+/* Style the image inside the card */
+.card img {
+    width: 5rem;
+    /* rounded -> circle */
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/*Style the heading inside the card */
+.card h1 {
+    font-size: clamp(1rem, 2vw, 1.3125rem);
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+
+}
+
+.card h2 {
+    color: var(--green);
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight:600;
+}
+
+.card h3 {
+    color: white;
+    font-size: 0.8125rem;
+    font-weight:400;
+}
+
+.card-link {
+    background-color: var(--grey-700);
+    /* Rounded corners */
+    border-radius: 0.3125rem;
+    /* Inner spacing */
+    padding: 0.75rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: white;
+    width: 100%;
+}
+.card-link:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+.card p {
+    /*font-size: 1rem;*/
+    font-size: clamp(0.75rem, 1.56vw, 1rem);
+    font-weight: 500;
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.card-published {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.card-author img {
+    width: 3.5rem;
+    padding-right: 1rem;
+
+}
+
+.card-author h2 {
+    font-size: 0.9375rem;
+    font-weight: 800;
+    color: var(--grey-900);
+}
