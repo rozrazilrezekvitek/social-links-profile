@@ -17,7 +17,7 @@ body {
     background-color: var(--grey-900);
     /* Full height of the screen */
     height: 100vh;
-    font-family: 'Inter';
+    font-family: 'Inter',sans-serif;
     font-weight: 700;
     margin: 0;
     /* Use Flexbox layout */
@@ -92,7 +92,6 @@ body {
     /* rounded -> circle */
     border-radius: 50%;
     margin: 0 auto;
-    alt:"portrait"
 }
 
 /*Style the heading inside the card */
