@@ -92,6 +92,7 @@ body {
     /* rounded -> circle */
     border-radius: 50%;
     margin: 0 auto;
+    alt:"portrait"
 }
 
 /*Style the heading inside the card */
